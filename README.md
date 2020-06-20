@@ -12,22 +12,22 @@ Please install Python 3.7 environment, as well as lifelines (Version 0.24.8), ma
 
 ## Step 1 Uncompress Data
 Please clone the project, and then uncompress the entire MIMIC-III dataset into:  
-(''')
+'''
 /resource/raw_data/
-(''')
+'''
 The files in the folder are like:  
-(''')
+'''
 /resource/raw_data/  
     ADMISSIONS.csv  
     CALLOUT.csv  
     ...
     TRANSFERS.csv
-(''')  
+'''
 
   
 ## Step 2 Develop Unpreprocessed Dataset from Raw Data
 Please run the 'read_raw_mimic_data.py' script in the /src folder.  
-This script is responsible to reconstruct the dataset to a structured format. As the MIMIC-III is a large dataset, this script typically needs several hours to parse the entire dataset. Once the script is executed successfully, we can find a file named 'mimic_unpreprocessed.csv' in the /resource folder. The file contains 46,521 admissions.
+This script is responsible to reconstruct the dataset to a structured format and extract AKI and in-hospital mortality events. As the MIMIC-III is a large dataset, this script typically needs several hours to parse the entire dataset. Once the script is executed successfully, we can find a file named 'mimic_unpreprocessed.csv' in the /resource folder. The file contains 46,521 admissions.
   
   
 ## Step 3 Discard Undesirable Admissions and Features
@@ -47,4 +47,6 @@ As described in the paper, the phenogroup assignment of a patient is decided by 
 Once the script is successfully executed, we can find a file named 'phenogroup_assignment.csv' in the /resource folder.
   
 ## Step 6 Survival Curve  
-Please run the 
+Please run the 'kaplan_meier_curve.py' script.
+The script is responsible to plot the survival curve of two phenogroups assigned in last step.
+Onece the script is successfully executed, we can find a file named 'kaplan_meier_curve.png' in the /resource folder. The figure is same as the Figure 2 in our paper.
