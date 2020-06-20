@@ -12,17 +12,17 @@ Please install Python 3.7 environment, as well as lifelines (Version 0.24.8), ma
 
 ## Step 1 Uncompress Data
 Please clone the project, and then uncompress the entire MIMIC-III dataset into:  
-(```)
+```
 /resource/raw_data/
-(```)
+```
 The files in the folder are like:  
-(```)
-/resource/raw_data/  
-    ADMISSIONS.csv  
-    CALLOUT.csv  
-    ...
-    TRANSFERS.csv
-(```)
+```
+/resource/raw_data/...  
+    ADMISSIONS.csv...
+    CALLOUT.csv...
+    ......
+    TRANSFERS.csv...
+```
 
   
 ## Step 2 Develop Unpreprocessed Dataset from Raw Data
