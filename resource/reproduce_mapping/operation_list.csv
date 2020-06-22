@@ -1,0 +1,68 @@
+procedure_name,code,long title
+PCI,0066,Percutaneous transluminal coronary angioplasty [PTCA]
+PCI,3606,Insertion of non-drug-eluting coronary artery stent(s)
+PCI,3607,Insertion of drug-eluting coronary artery stent(s)
+PCI,3604,Intracoronary artery thrombolytic infusion
+PCI,3609,Other removal of coronary artery obstruction
+CABG,3611,(Aorto)coronary bypass of one coronary artery
+CABG,3612,(Aorto)coronary bypass of two coronary arteries
+CABG,3613,(Aorto)coronary bypass of three coronary arteries
+CABG,3614,(Aorto)coronary bypass of four or more coronary arteries
+CABG,3615,Single internal mammary-coronary artery bypass
+CABG,3616,Double internal mammary-coronary artery bypass
+CABG,3617,Abdominal-coronary artery bypass
+CABG,3619,Other bypass anastomosis for heart revascularization
+Angiography,"8840","Arteriography using contrast material, unspecified site"
+Angiography,"8841","Arteriography of cerebral arteries"
+Angiography,"8842","Aortography"
+Angiography,"8843","Arteriography of pulmonary arteries"
+Angiography,"8844","Arteriography of other intrathoracic vessels"
+Angiography,"8845","Arteriography of renal arteries"
+Angiography,"8846","Arteriography of placenta"
+Angiography,"8847","Arteriography of other intra-abdominal arteries"
+Angiography,"8848","Arteriography of femoral and other lower extremity arteries"
+Angiography,"8849","Arteriography of other specified sites"
+Angiography,"8850","Angiocardiography, not otherwise specified"
+Angiography,"8851","Angiocardiography of venae cavae"
+Angiography,"8852","Angiocardiography of right heart structures"
+Angiography,"8853","Angiocardiography of left heart structures"
+Angiography,"8854","Combined right and left heart angiocardiography"
+Angiography,"8855","Coronary arteriography using a single catheter"
+Angiography,"8856","Coronary arteriography using two catheters"
+Angiography,"8857","Other and unspecified coronary arteriography"
+Angiography,"8858","Negative-contrast cardiac roentgenography"
+Angiography,"8859","Intra-operative coronary fluorescence vascular angiography"
+Angiography,"8860","Phlebography using contrast material, unspecified site"
+Angiography,"8861","Phlebography of veins of head and neck using contrast material"
+Angiography,"8862","Phlebography of pulmonary veins using contrast material"
+Angiography,"8863","Phlebography of other intrathoracic veins using contrast material"
+Angiography,"8864","Phlebography of the portal venous system using contrast material"
+Angiography,"8865","Phlebography of other Intra-Abdominal veins using contrast material"
+Angiography,"8866","Phlebography of femoral and other lower extremity veins using contrast material"
+Angiography,"8867","Phlebography of other specified sites using contrast material"
+PCI,0040,"Procedure on single vessel"
+PCI,0041,"Procedure on two vessels"
+PCI,0042,"Procedure on three vessels"
+PCI,0043,"Procedure on four or more vessels"
+PCI,0044,"Procedure on vessel bifurcation"
+PCI,0045,"Insertion of one vascular stent"
+PCI,0046,"Insertion of two vascular stents"
+PCI,0047,"Insertion of three vascular stents"
+PCI,0048,"Insertion of four or more vascular stents"
+pacemaker,"3780","Insertion of permanent pacemaker, initial or replacement, type of device not specified"
+pacemaker,"3781","Initial insertion of single-chamber device, not specified as rate responsive"
+pacemaker,"3782","Initial insertion of single-chamber device, rate responsive"
+pacemaker,"3783","Initial insertion of dual-chamber device"
+pacemaker,"3785","Replacement of any type pacemaker device with single-chamber device, not specified as rate responsive"
+pacemaker,"3786","Replacement of any type of pacemaker device with single-chamber device, rate responsive"
+pacemaker,"3787","Replacement of any type pacemaker device with dual-chamber device"
+pacemaker,"3789","Revision or removal of pacemaker device"
+pacemaker,0050,"Implantation of cardiac resynchronization pacemaker without mention of defibrillation, total system [CRT-P]"
+CRT,0051,"Implantation of cardiac resynchronization defibrillator, total system [CRT-D]"
+pacemaker,0053,Implantation or replacement of cardiac resynchronization pacemaker pulse generator only [CRT-P]
+CRT,0054,Implantation or replacement of cardiac resynchronization defibrillator pulse generator only [CRT-D]
+defibrillator,"3794","Implantation or replacement of automatic cardioverter/defibrillator, total system [AICD]"
+defibrillator,"3795","Implantation of automatic cardioverter/defibrillator lead(s) only"
+defibrillator,"3796","Implantation of automatic cardioverter/defibrillator pulse generator only"
+defibrillator,"3797","Replacement of automatic cardioverter/defibrillator lead(s) only"
+defibrillator,"3798","Replacement of automatic cardioverter/defibrillator pulse generator only"

@@ -8,7 +8,7 @@ If you are not able to access MIMIC-III, please complete a required training cou
 Please ensure your computer has enough storage space because MIMIC-III is a large dataset (45 GiB is required in this study)
 
 ### Environment
-Please install Python 3.7 environment, as well as lifelines (Version 0.24.8), matplotlib (3.2.1), numpy (1.18.4), pandas (1.0.4), scikit-learn (0.23.1), and scipy (1.4.1) packages in advance.
+Please install Python 3.7 environment, as well as lifelines (Version 0.24.8), matplotlib (3.2.1), numpy (1.18.4), pandas (1.0.4), scikit-learn (0.23.1), joblib (0.15.1), and scipy (1.4.1) packages in advance.
 
 ## Step 1 Uncompress Data
 Please clone the project, and then uncompress the entire MIMIC-III dataset into:  
@@ -32,7 +32,8 @@ This script is responsible to reconstruct the dataset to a structured format and
   
 ## Step 3 Discard Undesirable Admissions and Features
 Please run the 'visit_and_feature_filter.py' script in the /src folder  
-According to the requirement of this study, we need to included adult heart failure patients with normal renal function and relative complete EHR data to conduct analysis. Therefore, discarding undesirable information contained in the 'mimic_unpreprocessed.csv' is necessary. The 'visit_and_feature_filter.py' script is responsible to discard undesirable information. Once the script is successfully executed, we can find a file named 'filtered.csv' in the /resource folder. The file contains 1,006 admissions, and each admission consists of 40 variables.  
+According to the requirement of this study, we need to included adult heart failure patients with normal renal function and relative complete EHR data to conduct analysis. Therefore, discarding undesirable information contained in the 'mimic_unpreprocessed.csv' is necessary. 
+The 'visit_and_feature_filter.py' script is responsible to discard undesirable information, which basically follows the procedure in Figure S2 in the paper. Once the script is successfully executed, we can find a file named 'filtered.csv' in the /resource folder. The file contains 1,006 admissions, and each admission consists of 40 variables.  
   
 ## Step 4 Convert and Impute Data  
 Please run the 'value_convert.py' script
@@ -49,4 +50,28 @@ Once the script is successfully executed, we can find a file named 'phenogroup_a
 ## Step 6 Survival Curve  
 Please run the 'kaplan_meier_curve.py' script.
 The script is responsible to plot the survival curve of two phenogroups assigned in last step.
-Onece the script is successfully executed, we can find a file named 'kaplan_meier_curve.png' in the /resource folder. The figure is same as the Figure 2 in our paper.
+Once the script is successfully executed, we can find a file named 'kaplan_meier_curve.png' in the /resource folder. The figure is same as the Figure 2 in our paper.
+
+## Step 7 Data Recover
+Please run the 'value_recover_with_phenogroup.py' script.
+This script is responsible to recover the value of variables. Note the missing value will also be recovered to the mean of centroids.
+Once the script is successfully executed, we can find a file named 'recovered_data_with_group.csv' in the /resource folder.
+The medians, frequencies, as well as the quartiles and counts of MIMIC dataset listed in Table S2 were summarized by this file.
+
+## Step 8 Transfer Test
+Please run the 'transfer_test.py' script
+This script is responsible test the robustness of our risk stratification model. Once the script is successfully executed, we can see the output like:
+'''
+D:\PythonProject\phenotype\venv\Scripts\python.exe D:/PythonProject/AKI_Phenogroup/src/transfer_test.py
+aki_only_group, recall (sensitivity): 0.77313, specificity: 0.32790, auc: 0.55051
+aki_10, recall (sensitivity): 0.53744, specificity: 0.49457, auc: 0.50401
+aki_10_group, recall (sensitivity): 0.41410, specificity: 0.63225, auc: 0.54359
+aki_40, recall (sensitivity): 0.53304, specificity: 0.53804, auc: 0.58027
+aki_40_group, recall (sensitivity): 0.56167, specificity: 0.52899, auc: 0.58284
+death_only_group, recall (sensitivity): 0.83673, specificity: 0.29515, auc: 0.56594
+death_10, recall (sensitivity): 0.67347, specificity: 0.53855, auc: 0.65470
+death_10_group, recall (sensitivity): 0.70408, specificity: 0.54956, auc: 0.66741
+death_40, recall (sensitivity): 0.54082, specificity: 0.70264, auc: 0.66926
+death_40_group, recall (sensitivity): 0.57143, specificity: 0.68062, auc: 0.66812
+'''
+The results is same as the MIMIC dataset results that we listed in the Table 3.
