@@ -62,7 +62,6 @@ The medians, frequencies, as well as the quartiles and counts of the recovered M
 Please run the 'transfer_test.py' script
 This script is responsible test the robustness of our risk stratification model. Once the script is successfully executed, we can see the output like:
 ```
-D:\PythonProject\phenotype\venv\Scripts\python.exe D:/PythonProject/AKI_Phenogroup/src/transfer_test.py
 aki_only_group, recall (sensitivity): 0.77313, specificity: 0.32790, auc: 0.55051
 aki_10, recall (sensitivity): 0.53744, specificity: 0.49457, auc: 0.50401
 aki_10_group, recall (sensitivity): 0.41410, specificity: 0.63225, auc: 0.54359
