@@ -7,7 +7,7 @@ import math
 def main():
     rule_path = os.path.abspath('../resource/reproduce_mapping/value_trans_rule.csv')
     impute_path = os.path.abspath('../resource/reproduce_mapping/centroid.csv')
-    data_path = os.path.abspath('../resource/reproduce_cache/filtered.csv')
+    data_path = os.path.abspath('../resource/filtered.csv')
     save_path = os.path.abspath('../resource/preprocessed_data.csv')
 
     rule_dict = read_rule_set(rule_path)

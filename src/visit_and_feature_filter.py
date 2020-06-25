@@ -9,7 +9,7 @@ def main():
     egfr_threshold = 60
     item_list = ['egfr', 'age', 'sex', 'Angiography', 'PCI', 'diuretic', 'Anticoagulants', 'CCB', 'ACEI',
                  'PositiveInotropicDrugs', 'ARB', 'beta-blocker', 'antiplatelet', 'vasodilator', 'DBP', 'SBP',
-                 'BMI', 'Triglycerides', 'TotalProtein', 'ALT', 'Sodium', 'GGT', 'UrineRBC', 'Potassium',
+                 'BMI', 'Triglycerides', 'TotalProtein', 'ALT', 'Sodium', 'GGT', 'Potassium',
                  'Glucose', 'TotalBilirubin', 'HDL-C', 'TnT', 'Hemoglobin', 'Calcium', 'NT-pro-BNP', 'Urea',
                  'AST', 'LDL-C', 'LVEF', 'VHD', 'myocardiopathy', 'CHD', 'stroke', 'AF']
     reserve_set = set(item_list)
@@ -79,7 +79,6 @@ def unit_transform(feature_dict):
     # LDL-C 1 mmol/L = 38.66976 mg/dL
     # Calcium 1 mg/dL = 0.25 mmol/L
     # UreaNitrogen 2.801 mg/dL = 1 mmol/L Urea
-    # UrineRBC  >= 4 cut-off point
     for patient_id in feature_dict:
         for visit_id in feature_dict[patient_id]:
             try:
@@ -140,12 +139,6 @@ def unit_transform(feature_dict):
                     feature_dict[patient_id][visit_id]['Urea'] = \
                         float(feature_dict[patient_id][visit_id]['UreaNitrogen']) / 2.801
                     feature_dict[patient_id][visit_id].pop('UreaNitrogen')
-            except ValueError:
-                pass
-            try:
-                if float(feature_dict[patient_id][visit_id]['UrineRBC']) >= 0:
-                    feature_dict[patient_id][visit_id]['UrineRBC'] = \
-                         1 if float(feature_dict[patient_id][visit_id]['UrineRBC']) > 4 else 0
             except ValueError:
                 pass
     return feature_dict

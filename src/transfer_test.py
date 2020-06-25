@@ -13,17 +13,17 @@ def main():
             ['PCI', 'ALT', 'diuretic', 'AST', 'age', 'sex', 'Anticoagulants', 'PositiveInotropicDrugs',
              'NT-pro-BNP', 'Angiography'],
         'aki_10_group':
-            ['ACEI', 'beta-blocker', 'egfr', 'group_id', 'diuretic', 'myocardiopathy', 'sex', 'antiplatelet', 'TnT',
-             'NT-pro-BNP', 'stroke'],
-        'aki_40':
+            ['PCI', 'beta-blocker', 'egfr', 'group_id', 'AST', 'Urea', 'sex', 'antiplatelet', 'TnT',
+             'NT-pro-BNP', 'Angiography'],
+        'aki_39':
             ['ACEI', 'ARB', 'BMI', 'PCI', 'beta-blocker', 'egfr', 'GGT', 'ALT', 'LDL-C', 'CHD', 'diuretic', 'AST',
-             'LVEF', 'Urea', 'UrineRBC', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
+             'LVEF', 'Urea', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
              'Anticoagulants', 'antiplatelet', 'PositiveInotropicDrugs', 'VHD', 'Triglycerides', 'TnT', 'NT-pro-BNP',
              'stroke', 'Glucose', 'DBP', 'SBP', 'vasodilator', 'Hemoglobin', 'Angiography', 'Calcium', 'CCB', 'Sodium',
              'Potassium', 'HDL-C'],
-        'aki_40_group':
+        'aki_39_group':
             ['ACEI', 'ARB', 'BMI', 'PCI', 'beta-blocker', 'egfr', 'group_id', 'GGT', 'ALT',  'LDL-C', 'CHD', 'diuretic',
-             'AST', 'LVEF', 'Urea', 'UrineRBC', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
+             'AST', 'LVEF', 'Urea', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
              'Anticoagulants', 'antiplatelet', 'PositiveInotropicDrugs', 'VHD', 'Triglycerides', 'TnT', 'NT-pro-BNP',
              'stroke', 'Glucose', 'DBP', 'SBP', 'vasodilator', 'Hemoglobin', 'Angiography', 'Calcium', 'CCB', 'Sodium',
              'Potassium', 'HDL-C'],
@@ -32,15 +32,15 @@ def main():
             ['ACEI', 'ARB', 'egfr', 'GGT', 'ALT', 'Urea', 'age', 'TotalProtein', 'Anticoagulants', 'Triglycerides'],
         'death_10_group':
             ['PCI', 'egfr', 'group_id', 'CHD', 'diuretic', 'Urea', 'age', 'sex', 'Triglycerides', 'SBP', 'Angiography'],
-        'death_40':
+        'death_39':
             ['ACEI', 'ARB', 'BMI', 'PCI', 'beta-blocker', 'egfr', 'GGT', 'ALT', 'LDL-C', 'CHD', 'diuretic', 'AST',
-             'LVEF', 'Urea', 'UrineRBC', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
+             'LVEF', 'Urea', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
              'Anticoagulants', 'antiplatelet', 'PositiveInotropicDrugs', 'VHD', 'Triglycerides', 'TnT', 'NT-pro-BNP',
              'stroke', 'Glucose', 'DBP', 'SBP', 'vasodilator', 'Hemoglobin', 'Angiography', 'Calcium', 'CCB', 'Sodium',
              'Potassium', 'HDL-C'],
-        'death_40_group':
+        'death_39_group':
             ['ACEI', 'ARB', 'BMI', 'PCI', 'beta-blocker', 'egfr', 'group_id', 'GGT', 'ALT',  'LDL-C', 'CHD', 'diuretic',
-             'AST', 'LVEF', 'Urea', 'UrineRBC', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
+             'AST', 'LVEF', 'Urea', 'age', 'AF', 'myocardiopathy', 'sex', 'TotalBilirubin', 'TotalProtein',
              'Anticoagulants', 'antiplatelet', 'PositiveInotropicDrugs', 'VHD', 'Triglycerides', 'TnT', 'NT-pro-BNP',
              'stroke', 'Glucose', 'DBP', 'SBP', 'vasodilator', 'Hemoglobin', 'Angiography', 'Calcium', 'CCB', 'Sodium',
              'Potassium', 'HDL-C'],

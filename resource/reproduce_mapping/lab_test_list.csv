@@ -3,7 +3,6 @@ Creatinine,SCr,50912,"800,000",mg/dL
 Triglycerides,Triglycerides,51000,25000,mg/dL
 Protein,"UrineProtein",51492,"100,000",mg/dL
 "Total Protein, Urine","UrineProtein",51102,"9,000",mg/dL
-RBC,"UrineRBC",51493,"80,000",#/hpf
 "Protein, Total","TotalProtein",50976,"10,000",g/dL
 Alanine Aminotransferase (ALT),ALT,50861,"210,000",IU/L
 Asparate Aminotransferase (AST),AST,50878,"210,000",IU/L
