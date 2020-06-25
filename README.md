@@ -62,14 +62,15 @@ The medians, frequencies, as well as the quartiles and counts of MIMIC dataset l
 Please run the 'transfer_test.py' script
 This script is responsible test the robustness of our risk stratification model. Once the script is successfully executed, we can see the output like:
 ```
+aki_only_group, recall (sensitivity): 0.77093, specificity: 0.32790, auc: 0.54941
 aki_10, recall (sensitivity): 0.53744, specificity: 0.49457, auc: 0.50402
 aki_10_group, recall (sensitivity): 0.49559, specificity: 0.56703, auc: 0.54891
-aki_40, recall (sensitivity): 0.57930, specificity: 0.51993, auc: 0.56808
-aki_40_group, recall (sensitivity): 0.61013, specificity: 0.49819, auc: 0.57261
+aki_39, recall (sensitivity): 0.57930, specificity: 0.51993, auc: 0.56808
+aki_39_group, recall (sensitivity): 0.61013, specificity: 0.49819, auc: 0.57261
 death_only_group, recall (sensitivity): 0.83673, specificity: 0.29626, auc: 0.56650
 death_10, recall (sensitivity): 0.67347, specificity: 0.53965, auc: 0.65490
 death_10_group, recall (sensitivity): 0.70408, specificity: 0.54736, auc: 0.66700
-death_40, recall (sensitivity): 0.55102, specificity: 0.70815, auc: 0.65041
-death_40_group, recall (sensitivity): 0.59184, specificity: 0.65859, auc: 0.65603
+death_39, recall (sensitivity): 0.55102, specificity: 0.70815, auc: 0.65041
+death_39_group, recall (sensitivity): 0.59184, specificity: 0.65859, auc: 0.65603
 ```
 The results is same as the MIMIC dataset results that we listed in the Table 3.
