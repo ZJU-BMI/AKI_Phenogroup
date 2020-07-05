@@ -7,11 +7,11 @@ from itertools import islice
 def main():
     patient_delete_missing_rate = 0.3
     egfr_threshold = 60
-    item_list = ['egfr', 'age', 'sex', 'Angiography', 'PCI', 'diuretic', 'Anticoagulants', 'CCB', 'ACEI',
-                 'PositiveInotropicDrugs', 'ARB', 'beta-blocker', 'antiplatelet', 'vasodilator', 'DBP', 'SBP',
-                 'BMI', 'Triglycerides', 'TotalProtein', 'ALT', 'Sodium', 'GGT', 'Potassium',
-                 'Glucose', 'TotalBilirubin', 'HDL-C', 'TnT', 'Hemoglobin', 'Calcium', 'NT-pro-BNP', 'Urea',
-                 'AST', 'LDL-C', 'LVEF', 'VHD', 'myocardiopathy', 'CHD', 'stroke', 'AF']
+    item_list = ["Acute HF", 'egfr', 'diabetes', 'age', 'sex', 'Angiography', 'PCI', 'antiplatelet', 'Anticoagulants',
+                 'beta-blocker', 'PositiveInotropicDrugs', 'vasodilator', 'ACEI/ARB', 'CCB', 'diuretic', 'DBP', 'SBP',
+                 'BMI', 'Triglycerides', 'TotalProtein', 'ALT', 'Sodium', 'GGT', 'Potassium', 'TotalBilirubin',
+                 'HDL-C', 'TnT', 'Hemoglobin', 'Calcium', 'NT-pro-BNP', 'Urea', 'AST', 'LDL-C', 'LVEF', 'VHD',
+                 'myocardiopathy', 'CHD', 'stroke', 'AF']
     reserve_set = set(item_list)
 
     source_file_path = os.path.abspath('../resource/mimic_unpreprocessed.csv')
