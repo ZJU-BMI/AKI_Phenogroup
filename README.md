@@ -51,7 +51,7 @@ Once the script is successfully executed, we can find a file named 'phenogroup_a
 Please run the 'kaplan_meier_curve.py' script.
 The script is responsible to plot the survival curve of two phenogroups assigned in last step.
 Once the script is successfully executed, we can find a file named 'kaplan_meier_curve.png' in the /resource folder. The figure is same as the Figure 2 in our paper.
-
+![km-curve]("https://github.com/ZJU-BMI/AKI_Phenogroup/blob/master/resource/kaplan_meier_curve.png)
 ## Step 7 Data Recover
 Please run the 'value_recover_with_phenogroup.py' script.
 This script is responsible to recover the value of variables. Note the missing value will also be recovered to the mean of centroids.
